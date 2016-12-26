@@ -10,14 +10,5 @@ import XCTest
 @testable import Attributed
 
 class StringExtensionTests: XCTestCase {
-    func testAttributed() {
-        let attributes = Attributes {
-            return $0.font(UIFont(name: "Chalkduster", size: 18.0)!)
-                     .foreground(color: .green)
-        }
-        let attributedString = "This is a test".attributed(with: attributes)
-        
-        
-    }
-    
+    // TODO: Write Tests
 }
