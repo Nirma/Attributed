@@ -25,39 +25,39 @@ public struct Attributes {
         self.dictionary = dictionary
     }
     
-    func font(_ font: UIFont) -> Attributes {
+    public func font(_ font: UIFont) -> Attributes {
         return self + Attributes(dictionary: [NSFontAttributeName: font])
     }
     
-    func kerning(_ kerning: Double) -> Attributes {
+    public func kerning(_ kerning: Double) -> Attributes {
         return self + Attributes(dictionary: [NSKernAttributeName: NSNumber(floatLiteral: kerning)])
     }
     
-    func strikeThroughStyle(_ strikeThroughStyle: NSUnderlineStyle) -> Attributes {
+    public func strikeThroughStyle(_ strikeThroughStyle: NSUnderlineStyle) -> Attributes {
         return self + Attributes(dictionary: [NSStrikethroughStyleAttributeName: strikeThroughStyle.rawValue])
     }
     
-    func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> Attributes {
+    public func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> Attributes {
         return self + Attributes(dictionary: [NSUnderlineStyleAttributeName: underlineStyle.rawValue])
     }
     
-    func strokeColor(_ strokeColor: UIColor) -> Attributes {
+    public func strokeColor(_ strokeColor: UIColor) -> Attributes {
         return self + Attributes(dictionary: [NSStrokeColorAttributeName: strokeColor])
     }
     
-    func strokeWidth(_ strokewidth: Double) -> Attributes {
+    public func strokeWidth(_ strokewidth: Double) -> Attributes {
         return self + Attributes(dictionary: [NSStrokeWidthAttributeName: NSNumber(floatLiteral: strokewidth)])
     }
     
-    func foreground(color: UIColor) -> Attributes {
+    public func foreground(color: UIColor) -> Attributes {
         return self + Attributes(dictionary: [NSForegroundColorAttributeName: color])
     }
     
-    func background(color: UIColor) -> Attributes {
+    public func background(color: UIColor) -> Attributes {
         return self + Attributes(dictionary: [NSForegroundColorAttributeName: color])
     }
     
-    func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> Attributes {
+    public func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> Attributes {
         return self + Attributes(dictionary: [NSParagraphStyleAttributeName: paragraphStyle])
     }
 }
