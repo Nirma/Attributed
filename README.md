@@ -80,11 +80,11 @@ The second interface is similar but takes closure given a blank `Attributes` tha
 to be used in constructing an `NSAttributedString`.
 
 ```swift
-let nameLabel.attributedText = "Steve".attributed {
-                                      return $0.font(UIFont(name: "Chalkduster", size: 24.0)!)
-                                               .foreground(color: .red)
-                                               .underlineStyle(.styleSingle)
-                               }
+let attributedText = "Steve".attributed {
+                            return $0.font(UIFont(name: "Chalkduster", size: 24.0)!)
+                                     .foreground(color: .red)
+                                     .underlineStyle(.styleSingle)
+                     }
 ```
 
 ## Installation
@@ -105,7 +105,7 @@ If you use Carthage to build your dependencies, make sure you have added `Attrib
 If you use CocoaPods to manage your dependencies, simply add
 Attributed to your `Podfile`:
 
-```
+```ruby
 pod 'AttributedLib'
 ```
 
