@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AttributedLib'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A Modern interface for attributed strings.'
  
   s.description      = <<-DESC
