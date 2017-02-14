@@ -54,7 +54,7 @@ public struct Attributes {
     }
     
     public func background(color: UIColor) -> Attributes {
-        return self + Attributes(dictionary: [NSForegroundColorAttributeName: color])
+        return self + Attributes(dictionary: [NSBackgroundColorAttributeName: color])
     }
     
     public func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> Attributes {
