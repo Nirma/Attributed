@@ -60,6 +60,14 @@ public struct Attributes {
     public func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> Attributes {
         return self + Attributes(dictionary: [NSParagraphStyleAttributeName: paragraphStyle])
     }
+
+    public func shadow(_ shadow: NSShadow) -> Attributes {
+        return self + Attributes(dictionary: [NSShadowAttributeName: shadow])
+    }
+
+    public func obliqueness(_ value: CGFloat) -> Attributes {
+        return self + Attributes(dictionary: [NSObliquenessAttributeName: value])
+    }
 }
 
 
