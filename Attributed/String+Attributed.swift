@@ -169,3 +169,16 @@ extension String {
         return attributed(with: attributes)
     }
 }
+
+
+extension NSString {
+
+    public func attributed(with attributes: Attributes) -> NSAttributedString {
+        return (self as String).attributed(with: attributes)
+    }
+
+    public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
+        return (self as String).attributed(attributeBlock)
+    }
+
+}
