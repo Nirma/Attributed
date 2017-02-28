@@ -45,3 +45,51 @@ final class NSStringExtensionTests: XCTestCase {
     }
 
 }
+
+
+final class NSAttributedStringExtensionTests: XCTestCase {
+
+    func testModifiedWithAttributesForRange() {
+        let string = "😎 Lorem 😀 ipsum 👀 dolor 👻 sit 🎲 amet, 🎲 consectetur 🔥 adipiscing 🚀 elit."
+        let range = (string as NSString).range(of: "👻 sit 🎲 amet, 🎲 consectetur")
+        let attributes = Attributes {
+            $0.font(.systemFont(ofSize: 12.0))
+                .foreground(color: .darkGray)
+        }
+        let rangeAttributes = Attributes().foreground(color: .red)
+        let expected = NSMutableAttributedString(string: (string as String), attributes: attributes.dictionary)
+        expected.addAttributes(rangeAttributes.dictionary, range: range)
+        let attributed = NSAttributedString(string: (string as String), attributes: attributes.dictionary)
+        XCTAssertNotEqual(expected.copy() as! NSAttributedString, attributed)
+        XCTAssertEqual(expected.copy() as! NSAttributedString, attributed.modified(with: rangeAttributes, for: range))
+
+        // Test againts + operator
+        let appended = "😎 Lorem 😀 ipsum 👀 dolor ".attributed(with: attributes)
+            + "👻 sit 🎲 amet, 🎲 consectetur".attributed(with: attributes + rangeAttributes)
+            + " 🔥 adipiscing 🚀 elit.".attributed(with: attributes)
+        XCTAssertEqual(appended, attributed.modified(with: rangeAttributes, for: range))
+    }
+
+}
+
+
+final class NSMutableAttributedStringExtensionTests: XCTestCase {
+
+    func testAddAttributesToRange() {
+        let string = "😎 Lorem 😀 ipsum 👀 dolor 👻 sit 🎲 amet, 🎲 consectetur 🔥 adipiscing 🚀 elit."
+        let range = (string as NSString).range(of: "👻 sit 🎲 amet, 🎲 consectetur")
+        let attributes = Attributes {
+            $0.font(.systemFont(ofSize: 12.0))
+                .foreground(color: .darkGray)
+        }
+        let rangeAttributes = Attributes().foreground(color: .red)
+        let expected = NSMutableAttributedString(string: (string as String), attributes: attributes.dictionary)
+        let attributed = NSMutableAttributedString(string: (string as String), attributes: attributes.dictionary)
+
+        expected.addAttributes(rangeAttributes.dictionary, range: range)
+        XCTAssertNotEqual(expected, attributed)
+        attributed.add(rangeAttributes, to: range)
+        XCTAssertEqual(expected, attributed)
+    }
+
+}
