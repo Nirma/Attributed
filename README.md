@@ -1,7 +1,7 @@
 # Attributed
 [![Build Status](https://travis-ci.org/Nirma/Attributed.svg?branch=master)](https://travis-ci.org/Nirma/Attributed)
 ![Swift 3.0.1](https://img.shields.io/badge/Swift-3.0.1-orange.svg)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/Attributed.svg)](#cocoapods)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/AttributedLib.svg)](#cocoapods)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
