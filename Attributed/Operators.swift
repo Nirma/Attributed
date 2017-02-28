@@ -12,7 +12,7 @@ public func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributed
     let result = NSMutableAttributedString()
     result.append(lhs)
     result.append(rhs)
-    return result
+    return NSAttributedString(attributedString: result)
 }
 
 
