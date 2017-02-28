@@ -169,3 +169,36 @@ extension String {
         return attributed(with: attributes)
     }
 }
+
+
+extension NSString {
+
+    public func attributed(with attributes: Attributes) -> NSAttributedString {
+        return (self as String).attributed(with: attributes)
+    }
+
+    public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
+        return (self as String).attributed(attributeBlock)
+    }
+
+}
+
+
+extension NSAttributedString {
+
+    public func modified(with attributes: Attributes, for range: NSRange) -> NSAttributedString {
+        let result = NSMutableAttributedString(attributedString: self)
+        result.add(attributes, to: range)
+        return NSAttributedString(attributedString: result)
+    }
+
+}
+
+
+extension NSMutableAttributedString {
+
+    public func add(_ attributes: Attributes, to range: NSRange) {
+        self.addAttributes(attributes.dictionary, range: range)
+    }
+
+}
