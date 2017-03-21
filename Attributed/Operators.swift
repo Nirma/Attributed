@@ -82,8 +82,10 @@ public func + (lhs: NSParagraphStyle, rhs: NSParagraphStyle) -> NSParagraphStyle
         combinedAttributes.defaultTabInterval = rhs.defaultTabInterval
     }
     
-    if rhs.allowsDefaultTighteningForTruncation != defaultParagraph.allowsDefaultTighteningForTruncation {
-        combinedAttributes.allowsDefaultTighteningForTruncation = rhs.allowsDefaultTighteningForTruncation
+    if #available(iOS 9.0, *) {
+        if rhs.allowsDefaultTighteningForTruncation != defaultParagraph.allowsDefaultTighteningForTruncation {
+            combinedAttributes.allowsDefaultTighteningForTruncation = rhs.allowsDefaultTighteningForTruncation
+        }
     }
     
     return combinedAttributes
