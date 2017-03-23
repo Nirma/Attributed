@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Attributed. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
     let result = NSMutableAttributedString()
