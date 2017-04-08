@@ -1,7 +1,5 @@
 language: objective-c
-osx_image: xcode8.2
-xcode_project: UIFontComplete.xcodeproj # path to your xcodeproj folder
-xcode_scheme: UIFontComplete
+osx_image: xcode8.3
 
 script:
- - xcodebuild
+    - xcodebuild -scheme Attributed build test -destination 'id=375B606D-0484-4067-9E45-7697A3860886'
