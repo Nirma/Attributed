@@ -1,33 +1,24 @@
 # Attributed
 [![Build Status](https://travis-ci.org/Nirma/Attributed.svg?branch=master)](https://travis-ci.org/Nirma/Attributed)
-![Swift 3.0.1](https://img.shields.io/badge/Swift-3.0.1-orange.svg)
+![Swift 3.1.0](https://img.shields.io/badge/Swift-3.0.1-orange.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/AttributedLib.svg)](#cocoapods)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 A Modern interface for attributed strings.
 
-## Usage 
-
+## About this Library
 This library aims to be a drop in replacement to the current programming interface of `NSAttributedString`.
 The existing interface to using attributed strings has a few flaws, namely if you dont know the Key and type of value 
 needed to set a certain attribute, you have spend time checking documentation or the reading the comments for `NSAttributedString`.
-Another concern is safety, passing a dictionary of type `[String: Any]` to the constructor of `NSAttributedString` is a potential crash at runtime waiting to happen. 
+Another concern is safety, passing a dictionary of type `[String: Any]` to the constructor of `NSAttributedString` is a potential crash at runtime waiting to happen.
 
-Say for example one wished to create a attributed string with text colored red, a font of `Chalkduster` and to have the string underlined.
+By wrapping the current official interface to `NSAttributedString` into a fluent easy to use API, Attributed was made
+in an attempt to give developers an alternative option to the official interface. 
 
-Given the existing API that would look something like this:
+## Usage  
 
-```swift
-let attributes: [String: Any] = [
-    NSForegroundColorAttributeName: UIColor.red,
-    NSFontAttributeName: UIFont(name: "Chalkduster", size: 24.0)!,
-    NSUnderlineStyleAttributeName: 1,
-]
-
-let text = NSAttributedString(string: "Hello", attributes: attributes)
-```
-To produce the exact same string using this library one could write the following:
+Using Attributed is fairly straight forward, just create the attributes you wish your attributed text to have:
 
 ```swift
 let attributes = Attributes {
@@ -35,7 +26,11 @@ let attributes = Attributes {
              .font(UIFont(name: "Chalkduster", size: 24.0)!)
              .underlineStyle(.styleSingle)
 }
+```
 
+And then simply apply them to a `String`:
+
+```swift
 "Hello".attributed(with: attributes)
 ```
 
