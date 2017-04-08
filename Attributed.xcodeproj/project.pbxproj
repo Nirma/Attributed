@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA4B73E11E0B798C004C6947 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */; };
+		AABEF4EC1E98F532003260B7 /* NSString+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */; };
+		AABEF4EE1E98F62C003260B7 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4ED1E98F62C003260B7 /* Attributes.swift */; };
 		AAE1A2771E01537500610C40 /* AttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1A2761E01537500610C40 /* AttributesTests.swift */; };
 		AAEE62771DF8F3690079C70C /* Attributed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE626D1DF8F3690079C70C /* Attributed.framework */; };
 		AAEE627E1DF8F36A0079C70C /* Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = AAEE62701DF8F3690079C70C /* Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Attributed.swift"; sourceTree = "<group>"; };
+		AABEF4ED1E98F62C003260B7 /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 		AAE1A2761E01537500610C40 /* AttributesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesTests.swift; sourceTree = "<group>"; };
 		AAEE626D1DF8F3690079C70C /* Attributed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Attributed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEE62701DF8F3690079C70C /* Attributed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attributed.h; sourceTree = "<group>"; };
@@ -56,6 +60,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AABEF4EF1E98F696003260B7 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				AABEF4ED1E98F62C003260B7 /* Attributes.swift */,
+				AAEE62871DF8F3BE0079C70C /* Operators.swift */,
+			);
+			name = Attributes;
+			sourceTree = "<group>";
+		};
+		AABEF4F01E98F6C6003260B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */,
+				AAEE62891DF8F9560079C70C /* String+Attributed.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AABEF4F11E98F700003260B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE62701DF8F3690079C70C /* Attributed.h */,
+				AAEE62711DF8F3690079C70C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AABEF4F21E98F73F003260B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE627D1DF8F36A0079C70C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AAEE62631DF8F3690079C70C = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +116,9 @@
 		AAEE626F1DF8F3690079C70C /* Attributed */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE62701DF8F3690079C70C /* Attributed.h */,
-				AAEE62711DF8F3690079C70C /* Info.plist */,
-				AAEE62871DF8F3BE0079C70C /* Operators.swift */,
-				AAEE62891DF8F9560079C70C /* String+Attributed.swift */,
+				AABEF4EF1E98F696003260B7 /* Attributes */,
+				AABEF4F01E98F6C6003260B7 /* Extensions */,
+				AABEF4F11E98F700003260B7 /* Supporting Files */,
 			);
 			path = Attributed;
 			sourceTree = "<group>";
@@ -88,7 +126,7 @@
 		AAEE627A1DF8F3690079C70C /* AttributedTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE627D1DF8F36A0079C70C /* Info.plist */,
+				AABEF4F21E98F73F003260B7 /* Supporting Files */,
 				AAE1A2761E01537500610C40 /* AttributesTests.swift */,
 				AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */,
 			);
@@ -207,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEE628A1DF8F9560079C70C /* String+Attributed.swift in Sources */,
+				AABEF4EC1E98F532003260B7 /* NSString+Attributed.swift in Sources */,
+				AABEF4EE1E98F62C003260B7 /* Attributes.swift in Sources */,
 				AAEE62881DF8F3BE0079C70C /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
