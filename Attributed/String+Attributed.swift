@@ -38,7 +38,7 @@ extension NSAttributedString {
 extension NSMutableAttributedString {
 
     public func add(_ attributes: Attributes, to range: NSRange) {
-        self.addAttributes(attributes.dictionary, range: range)
+        addAttributes(attributes.dictionary, range: range)
     }
 
 }
