@@ -5,7 +5,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-A Modern interface for attributed strings.
+Modern Swift µframework for attributed strings.
 
 ## About this Library
 This library aims to be a drop in replacement to the current programming interface of `NSAttributedString`.
