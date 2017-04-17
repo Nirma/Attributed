@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
-
 // MARK: Primary Extension
 
-extension String {
+extension Attributed where Base == String {
 
     public func attributed(with attributes: Attributes) -> NSAttributedString {
         let attributes = attributes.dictionary
-        return NSAttributedString(string: self, attributes: attributes)
+        return NSAttributedString(string: base, attributes: attributes)
     }
 
     public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
@@ -25,20 +24,21 @@ extension String {
     }
 }
 
-extension NSAttributedString {
+public extension Attributed where Base == NSMutableAttributedString {
 
-    public func modified(with attributes: Attributes, for range: NSRange) -> NSAttributedString {
-        let result = NSMutableAttributedString(attributedString: self)
-        result.add(attributes, to: range)
-        return NSAttributedString(attributedString: result)
+    public func add(_ attributes: Attributes, to range: NSRange) {
+        base.addAttributes(attributes.dictionary, range: range)
     }
 
 }
 
-extension NSMutableAttributedString {
+public extension Attributed where Base == NSAttributedString {
 
-    public func add(_ attributes: Attributes, to range: NSRange) {
-        addAttributes(attributes.dictionary, range: range)
+    public func modified(with attributes: Attributes, for range: NSRange) -> NSAttributedString {
+        let string = base as NSAttributedString
+
+        let result = NSMutableAttributedString(attributedString: string)
+        result.at.add(attributes, to: range)
+        return NSAttributedString(attributedString: result)
     }
-
 }

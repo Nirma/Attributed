@@ -8,14 +8,13 @@
 
 import Foundation
 
-extension NSString {
+extension Attributed where Base == NSString {
 
     public func attributed(with attributes: Attributes) -> NSAttributedString {
-        return (self as String).attributed(with: attributes)
+        return attributed(with: attributes)
     }
 
     public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
-        return (self as String).attributed(attributeBlock)
+        return attributed(attributeBlock)
     }
-
 }
