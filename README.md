@@ -31,7 +31,7 @@ let attributes = Attributes {
 And then simply apply them to a `String`:
 
 ```swift
-"Hello".attributed(with: attributes)
+"Hello".at.attributed(with: attributes)
 ```
 
 ### Attributes
@@ -68,14 +68,14 @@ The first is: `attributed(with: attributes)` where `attributes` is an object of 
 This function will return an `NSAttributedString` from an object of type `String`.
 
 ```swift
-"Hello".attributed(with: attributes)
+"Hello".at.attributed(with: attributes)
 ```
 
 The second interface is similar but takes closure given a blank `Attributes` that the user can modify and return 
 to be used in constructing an `NSAttributedString`.
 
 ```swift
-let attributedText = "Steve".attributed {
+let attributedText = "Steve".at.attributed {
                             return $0.font(UIFont(name: "Chalkduster", size: 24.0)!)
                                      .foreground(color: .red)
                                      .underlineStyle(.styleSingle)
