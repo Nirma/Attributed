@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3150381EA4A57300A86368 /* Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3150371EA4A57300A86368 /* Attributed.swift */; };
 		AA4B73E11E0B798C004C6947 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */; };
 		AABEF4EC1E98F532003260B7 /* NSString+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */; };
 		AABEF4EE1E98F62C003260B7 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4ED1E98F62C003260B7 /* Attributes.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA3150371EA4A57300A86368 /* Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributed.swift; sourceTree = "<group>"; };
 		AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Attributed.swift"; sourceTree = "<group>"; };
 		AABEF4ED1E98F62C003260B7 /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
@@ -60,13 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AABEF4EF1E98F696003260B7 /* Attributes */ = {
+		AABEF4EF1E98F696003260B7 /* Attributed */ = {
 			isa = PBXGroup;
 			children = (
 				AABEF4ED1E98F62C003260B7 /* Attributes.swift */,
 				AAEE62871DF8F3BE0079C70C /* Operators.swift */,
+				AA3150371EA4A57300A86368 /* Attributed.swift */,
 			);
-			name = Attributes;
+			name = Attributed;
 			sourceTree = "<group>";
 		};
 		AABEF4F01E98F6C6003260B7 /* Extensions */ = {
@@ -116,7 +119,7 @@
 		AAEE626F1DF8F3690079C70C /* Attributed */ = {
 			isa = PBXGroup;
 			children = (
-				AABEF4EF1E98F696003260B7 /* Attributes */,
+				AABEF4EF1E98F696003260B7 /* Attributed */,
 				AABEF4F01E98F6C6003260B7 /* Extensions */,
 				AABEF4F11E98F700003260B7 /* Supporting Files */,
 			);
@@ -248,6 +251,7 @@
 				AABEF4EC1E98F532003260B7 /* NSString+Attributed.swift in Sources */,
 				AABEF4EE1E98F62C003260B7 /* Attributes.swift in Sources */,
 				AAEE62881DF8F3BE0079C70C /* Operators.swift in Sources */,
+				AA3150381EA4A57300A86368 /* Attributed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -69,7 +69,6 @@ public struct Attributes {
     }
 }
 
-
 // MARK: NSParagraphStyle related
 
 extension Attributes {
