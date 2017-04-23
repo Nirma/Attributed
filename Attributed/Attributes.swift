@@ -67,6 +67,10 @@ public struct Attributes {
     public func obliqueness(_ value: CGFloat) -> Attributes {
         return self + Attributes(dictionary: [NSObliquenessAttributeName: value])
     }
+
+    public func link(_ link: String) -> Attributes {
+        return self + Attributes(dictionary: [NSLinkAttributeName: link])
+    }
 }
 
 // MARK: NSParagraphStyle related
