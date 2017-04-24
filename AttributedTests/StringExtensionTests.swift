@@ -52,10 +52,10 @@ final class NSStringExtensionTests: XCTestCase {
                 .foreground(color: .darkGray)
         }
         let expected = NSAttributedString(string: (string as String), attributes: attributes.dictionary)
-        let attributed = (string as String).at.attributed(with: attributes)
+        let attributed = string.at.attributed(with: attributes)
         XCTAssertEqual(expected, attributed)
 
-        let attributed2 = (string as String).at.attributed(with: attributes.foreground(color: .red))
+        let attributed2 = string.at.attributed(with: attributes.foreground(color: .red))
         XCTAssertNotEqual(expected, attributed2)
     }
 
@@ -65,11 +65,12 @@ final class NSStringExtensionTests: XCTestCase {
             $0.font(.systemFont(ofSize: 12.0))
                 .foreground(color: .darkGray)
         }
+
         let expected = NSAttributedString(string: (string as String), attributes: attributesBlock(Attributes()).dictionary)
-        let attributed = (string as String).at.attributed(attributesBlock)
+        let attributed = string.at.attributed(attributesBlock)
         XCTAssertEqual(expected, attributed)
 
-        let attributed2 = (string as String).at.attributed { $0.foreground(color: .red) }
+        let attributed2 = string.at.attributed { $0.foreground(color: .red) }
         XCTAssertNotEqual(expected, attributed2)
     }
 

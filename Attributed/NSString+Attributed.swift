@@ -10,11 +10,11 @@ import Foundation
 
 extension Attributed where Base == NSString {
 
-    public func attributed(with attributes: Attributes) -> NSAttributedString {
-        return attributed(with: attributes)
-    }
+        public func attributed(with attributes: Attributes) -> NSAttributedString {
+            return (base as String).at.attributed(with: attributes)
+        }
 
-    public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
-        return attributed(attributeBlock)
-    }
+        public func attributed(_ attributeBlock: (Attributes) -> (Attributes)) -> NSAttributedString {
+            return (base as String).at.attributed(attributeBlock)
+        }
 }
