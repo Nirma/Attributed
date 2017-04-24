@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 /**
  Features that exist in Attributed are written as extensions to this class `Attributed`.
  */
@@ -20,7 +19,6 @@ public final class Attributed<Base> {
         self.base = base
     }
 }
-
 
 /**
  Types that have Attributed extensions extend `AttributedCompatible`.
@@ -37,7 +35,6 @@ public extension AttributedCompatible {
         return Attributed(self)
     }
 }
-
 
 /**
  Types that wish to implement Attributed extensions should adapt `AttributedCompatible` first 
