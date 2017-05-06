@@ -57,7 +57,7 @@ Since `Attributes` is of type `struct` there is zero chance of corrupting the  o
 ```swift
 let baseAttributes = Attributes().font(UIFont(name: "Chalkduster", size: 24.0)!)
  
-let accentedAttributes = baseAttribues.foreground(color: .red) 
+let accentedAttributes = baseAttributes.foreground(color: .red) 
                                       .underlineStyle(.styleSingle)
 ```
 
