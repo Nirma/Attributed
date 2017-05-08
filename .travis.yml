@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8.3
 
 script:
-    - xcodebuild -scheme Attributed build test -destination 'id=32CF67DB-D589-4143-9EB4-E534EB51877B'
+    - xcodebuild -scheme Attributed build test -destination 'OS=10.3,name=iPhone 7 Plus'
