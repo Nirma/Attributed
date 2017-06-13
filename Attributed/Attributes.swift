@@ -131,6 +131,10 @@ extension Attributes {
         return self + Attributes(dictionary: [NSParagraphStyleAttributeName: paragraphStyle])
     }
 
+    public func uniformLineHeight(_ uniformLineHeight: CGFloat) -> Attributes {
+        return maximumLineHeight(uniformLineHeight).minimumLineHeight(uniformLineHeight)
+    }
+
     public func baseWritingDirection(_ baseWritingDirection: NSWritingDirection) -> Attributes {
         let paragraphStyle = (dictionary[NSParagraphStyleAttributeName] ?? NSMutableParagraphStyle.default.mutableCopy()) as! NSMutableParagraphStyle
         paragraphStyle.baseWritingDirection = baseWritingDirection
