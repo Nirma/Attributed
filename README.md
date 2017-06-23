@@ -83,6 +83,13 @@ let attributedText = "Steve".at.attributed {
                      }
 ```
 
+## Swift 4
+Swift 4 support is currently provided by the branch `swift_4` and will be merged into master as soon as Swift 4 is released.
+If you need Swift 4 support please point to the `swift_4` branch.
+
+The pull request tracking Swift 4 progress can be found here: [Swift 4 support](https://github.com/Nirma/Attributed/pull/34)
+
+
 ## Installation
 
 #### Carthage
