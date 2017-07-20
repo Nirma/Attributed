@@ -87,6 +87,10 @@ public struct Attributes {
     public func link(_ link: String) -> Attributes {
         return self + Attributes(dictionary: [NSLinkAttributeName: link])
     }
+
+    public func baselineOffset(_ offset: NSNumber) -> Attributes {
+        return self + Attributes(dictionary: [NSBaselineOffsetAttributeName: offset])
+    }
 }
 
 // MARK: NSParagraphStyle related
