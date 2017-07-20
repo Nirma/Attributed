@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AttributedLib'
-  s.version          = '1.2.0'
-  s.summary          = 'A Modern interface for attributed strings.'
+  s.version          = '1.3.0'
+  s.summary          = 'Modern Swift µframework for attributed strings.'
  
   s.description      = <<-DESC
 A Modern interface for attributed strings.
