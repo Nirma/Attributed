@@ -37,7 +37,7 @@ And then simply apply them to a `String`:
 ```
 
 ### Attributes
-The `[String: Any]` attributes dictionary that was passed to the NSAttributedString constructor as in `NSAttributedString(string: "Hello", attributes: attributes)` has been made an actual type `Attributes`.
+The `[String: Any]` attributes dictionary that was passed to the `NSAttributedString` constructor as in `NSAttributedString(string: "Hello", attributes: attributes)` has been made an actual type `Attributes`.
 
 There are two intefaces for working with the `Attributes` type.
 The suggested interface is the Constructor interface that accepts a closure that returns an `Attributes` object.
