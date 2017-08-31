@@ -9,7 +9,24 @@
 
 µframework for Attributed strings.
 
-## Usage  
+## What is Attributed?
+Attributed aims to be a drop in replacement to the current programming interface of `NSAttributedString`.
+The existing interface to using attributed strings has a few flaws, namely if you dont know the Key and type of value 
+needed to set a certain attribute, you have spend time checking documentation or the reading the comments for `NSAttributedString`.
+Another concern is safety, passing a dictionary of type `[String: Any]` to the constructor of `NSAttributedString` is a potential crash at runtime waiting to happen.
+
+By wrapping the current official interface to `NSAttributedString` into a fluent easy to use API, Attributed was made
+in an attempt to give developers an alternative option to the official interface.
+
+# Features
+- [x] Create `NSAttributedString` instances with a simple and fluid interface
+- [x] Combine `NSAttributedString`s with `+`
+- [x] Partially apply Attributes to parts of an `NSAttributedString` by providing a `Range`
+
+### Dont see a feature you need?
+Feel free to open an Issue requesting the feature you want or send over a pull request!
+
+# Usage  
 
 ### Creating a new `NSAttributedString` by closure composition
 
@@ -57,16 +74,6 @@ let authorAttributes = bodyAttributes.foreground(color: .black)
 "I think theres something strangely musical about noise.".at.attributed(with: bodyAttributes)
 + "\n  - Trent Reznor".at.attributed(with: authorAttributes)
 ```
-
-
-## About this Library
-This library aims to be a drop in replacement to the current programming interface of `NSAttributedString`.
-The existing interface to using attributed strings has a few flaws, namely if you dont know the Key and type of value 
-needed to set a certain attribute, you have spend time checking documentation or the reading the comments for `NSAttributedString`.
-Another concern is safety, passing a dictionary of type `[String: Any]` to the constructor of `NSAttributedString` is a potential crash at runtime waiting to happen.
-
-By wrapping the current official interface to `NSAttributedString` into a fluent easy to use API, Attributed was made
-in an attempt to give developers an alternative option to the official interface.
 
 
 ## Swift 4
