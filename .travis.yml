@@ -3,3 +3,6 @@ osx_image: xcode8.3
 
 script:
     - xcodebuild -scheme Attributed build test -destination 'OS=10.3.1,name=iPhone 7 Plus'
+    
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
