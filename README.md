@@ -1,7 +1,7 @@
 # Attributed
 [![Build Status](https://travis-ci.org/Nirma/Attributed.svg?branch=master)](https://travis-ci.org/Nirma/Attributed)
 ![CodeCov](https://img.shields.io/codecov/c/github/Nirma/Attributed.svg)
-![Swift 3.1](https://img.shields.io/badge/Swift-3.1.1-orange.svg)
+![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/AttributedLib.svg)](#cocoapods)
 [![CocoaPods](https://img.shields.io/cocoapods/dt/AttributedLib.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -74,12 +74,6 @@ let authorAttributes = bodyAttributes.foreground(color: .black)
 "I think theres something strangely musical about noise.".at.attributed(with: bodyAttributes)
 + "\n  - Trent Reznor".at.attributed(with: authorAttributes)
 ```
-
-
-## Swift 4
-Swift 4 support is currently provided by the branch `swift_4` and will be merged into master as soon as Swift 4 is released.
-If you need Swift 4 support please point to the `swift_4` branch.
-
 
 ## Installation
 
