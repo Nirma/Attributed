@@ -89,7 +89,7 @@ public struct Attributes {
     }
 
     public func baselineOffset(_ offset: NSNumber) -> Attributes {
-        return self + Attributes(dictionary: [NSBaselineOffsetAttributeName: offset])
+        return self + Attributes(dictionary: [NSAttributedStringKey.baselineOffset: offset])
     }
 }
 
