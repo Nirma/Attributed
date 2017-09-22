@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9
 
 script:
-    - xcodebuild -scheme Attributed build test -destination 'OS=11.0.0,name=iPhone 7 Plus'
+    - xcodebuild -scheme Attributed build test -destination 'OS=11.0,name=iPhone 6 Plus'
     
 after_success:
   - bash <(curl -s https://codecov.io/bash)
