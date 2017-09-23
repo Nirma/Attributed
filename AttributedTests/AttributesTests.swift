@@ -34,8 +34,8 @@ class AttributesTests: XCTestCase {
     // NSBaselineOffsetAttributeName
 
     func testBaselineOffset() {
-        let expected: [String: Any] = [NSBaselineOffsetAttributeName: NSNumber(value: 1)]
+        let expected: [String: Any] = [NSAttributedStringKey.baselineOffset.rawValue: NSNumber(value: 1)]
         let attributed = Attributes().baselineOffset(1)
-        XCTAssert(attributed.dictionary.keys.first! == expected.keys.first!, "NSBaselineOffsetAttributeName functionality is broken")
+        XCTAssert(attributed.dictionary.keys.first!.rawValue == expected.keys.first!, "NSBaselineOffsetAttributeName functionality is broken")
     }
 }
