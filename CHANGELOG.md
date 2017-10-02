@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 `Attributed` adheres to [Semantic Versioning](http://semver.org/).
 
 --- 
+## [2.0.0](https://github.com/Nirma/Attributed/releases/tag/2.0.0) (09/20/2017)
+
+#### Summary
+
+This release only containted code fixes for Swift 4 / XCode 9
+
 ## [1.3.0](https://github.com/Nirma/Attributed/releases/tag/1.3.0) (07/20/2017)
 
 #### Summary
