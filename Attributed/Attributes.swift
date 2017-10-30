@@ -49,7 +49,7 @@ public struct Attributes {
     }
 
     public func strikeThroughStyle(_ strikeThroughStyle: NSUnderlineStyle) -> Attributes {
-        return self + Attributes(dictionary: [NSAttributedStringKey.strikethroughStyle: strikeThroughStyle])
+        return self + Attributes(dictionary: [NSAttributedStringKey.strikethroughStyle: strikeThroughStyle.rawValue])
     }
 
     public func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> Attributes {
