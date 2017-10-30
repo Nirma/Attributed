@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 
 --- 
 
+
+## [2.0.2](https://github.com/Nirma/Attributed/releases/tag/2.0.2) (10/30/2017)
+
+#### Summary
+
+This release fixes an issue with the strike-through attribute not working properly.
+This was addressed in Issue #47
+
 ## [2.0.1](https://github.com/Nirma/Attributed/releases/tag/2.0.1) (09/23/2017)
 
 #### Summary
