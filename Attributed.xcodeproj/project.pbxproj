@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA28CE69206A0D5F0025AA29 /* AttributedPublicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28CE68206A0D5F0025AA29 /* AttributedPublicTests.swift */; };
 		AA3150381EA4A57300A86368 /* Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3150371EA4A57300A86368 /* Attributed.swift */; };
 		AA4B73E11E0B798C004C6947 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */; };
 		AABEF4EC1E98F532003260B7 /* NSString+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA28CE68206A0D5F0025AA29 /* AttributedPublicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedPublicTests.swift; sourceTree = "<group>"; };
 		AA3150371EA4A57300A86368 /* Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributed.swift; sourceTree = "<group>"; };
 		AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Attributed.swift"; sourceTree = "<group>"; };
@@ -129,9 +131,10 @@
 		AAEE627A1DF8F3690079C70C /* AttributedTests */ = {
 			isa = PBXGroup;
 			children = (
-				AABEF4F21E98F73F003260B7 /* Supporting Files */,
+				AA28CE68206A0D5F0025AA29 /* AttributedPublicTests.swift */,
 				AAE1A2761E01537500610C40 /* AttributesTests.swift */,
 				AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */,
+				AABEF4F21E98F73F003260B7 /* Supporting Files */,
 			);
 			path = AttributedTests;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4B73E11E0B798C004C6947 /* StringExtensionTests.swift in Sources */,
+				AA28CE69206A0D5F0025AA29 /* AttributedPublicTests.swift in Sources */,
 				AAE1A2771E01537500610C40 /* AttributesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
