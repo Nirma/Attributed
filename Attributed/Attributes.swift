@@ -26,7 +26,7 @@ import Foundation
 
 public struct Attributes {
 
-    let dictionary: [NSAttributedStringKey: Any]
+    public let dictionary: [NSAttributedStringKey: Any]
 
     public init() {
         dictionary = [:]
