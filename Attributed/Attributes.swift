@@ -53,7 +53,7 @@ public struct Attributes {
     }
 
     public func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> Attributes {
-        return self + Attributes(dictionary: [NSAttributedStringKey.underlineStyle: underlineStyle])
+        return self + Attributes(dictionary: [NSAttributedStringKey.underlineStyle: underlineStyle.rawValue])
     }
 
     public func strokeColor(_ strokeColor: UIColor) -> Attributes {
