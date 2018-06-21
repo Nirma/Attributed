@@ -111,7 +111,7 @@ There are currently three main branches and their use is described as follows:
 |:---:|:---:|
 |`master`| The latest stable release. |
 | `development` | Next release development branch. *Not safe to point to directly* |
-| `attributed-3.0` | The next major release of Attributed, release goal is currently set for April 18, 2018. |
+| `attributed-3.0` | The next major release of Attributed, release goal is currently set for July 1, 2018. |
 
 ## License
 
