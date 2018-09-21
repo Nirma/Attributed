@@ -114,8 +114,8 @@ public func + (lhs: Attributes, rhs: Attributes) -> Attributes {
     }
 
     let combinedParagraphStyle: NSParagraphStyle?
-    let lhsParagraphStyle = lhs.dictionary[NSAttributedStringKey.paragraphStyle] as? NSParagraphStyle
-    let rhsParagraphStyle = rhs.dictionary[NSAttributedStringKey.paragraphStyle] as? NSParagraphStyle
+    let lhsParagraphStyle = lhs.dictionary[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle
+    let rhsParagraphStyle = rhs.dictionary[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle
 
     if let lhsParagraphStyle = lhsParagraphStyle, let rhsParagraphStyle = rhsParagraphStyle {
         combinedParagraphStyle = lhsParagraphStyle + rhsParagraphStyle
@@ -124,7 +124,7 @@ public func + (lhs: Attributes, rhs: Attributes) -> Attributes {
     }
 
     if let paragraphStyle = combinedParagraphStyle {
-        combined[NSAttributedStringKey.paragraphStyle] = paragraphStyle
+        combined[NSAttributedString.Key.paragraphStyle] = paragraphStyle
     }
 
     return Attributes(dictionary: combined)
