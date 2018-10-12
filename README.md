@@ -1,7 +1,7 @@
 # Attributed
 [![Build Status](https://travis-ci.org/Nirma/Attributed.svg?branch=master)](https://travis-ci.org/Nirma/Attributed)
 ![CodeCov](https://img.shields.io/codecov/c/github/Nirma/Attributed.svg)
-![Swift 4.2](https://img.shields.io/badge/Swift-4.0-orange.svg)
+![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/AttributedLib.svg)](#cocoapods)
 [![CocoaPods](https://img.shields.io/cocoapods/dt/AttributedLib.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -107,10 +107,10 @@ Contributions are more than welcome!
 
 There are currently three main branches and their use is described as follows: 
 
-| Branch | Purpose |
-|:---:|:---:|
-|`master`| The latest stable release. |
-| `development` | Next release development branch. *Not safe to point to directly* |
+| Branch           | Purpose                                                                               |
+| :--------------: | :-----------------------------------------------------------------------------------: |
+| `master`         | The latest stable release.                                                            |
+| `development`    | Next release development branch. *Not safe to point to directly*                      |
 | `attributed-3.0` | The next major release of Attributed, release goal is currently set for July 1, 2018. |
 
 ## License
