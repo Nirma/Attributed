@@ -58,7 +58,7 @@ then simply apply the `Attributes` to a `String`:
 ```
 
 ### Combining `NSAttributedString` with `+`
-This library defines a `+` operator for concatentating instances of `NSAttributedString`.
+This library defines an concatenation operator `+` for concatentating instances of `NSAttributedString`.
 `+` works with `NSAttributedString` no different than it does for `String`.
 This can be useful for combining `NSAttributedStrings` with different attributes to produce the 
 desired effect without having to specify ranges to apply different attributes to.
