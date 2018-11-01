@@ -10,7 +10,7 @@
 µframework for Attributed strings.
 
 ## What is Attributed?
-Attributed aims to be a drop in replacement to the current programming interface of `NSAttributedString`.
+Attributed aims to be a drop in replacement to the current verstion of the `NSAttributedString` API.
 The existing interface to using attributed strings has a few flaws, namely if you dont know the Key and type of value 
 needed to set a certain attribute, you have spend time checking documentation or the reading the comments for `NSAttributedString`.
 Another concern is safety, passing a dictionary of type `[String: Any]` to the constructor of `NSAttributedString` is a potential crash at runtime waiting to happen.
