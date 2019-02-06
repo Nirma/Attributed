@@ -3,7 +3,6 @@
 ![CodeCov](https://img.shields.io/codecov/c/github/Nirma/Attributed.svg)
 ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/AttributedLib.svg)](#cocoapods)
-[![CocoaPods](https://img.shields.io/cocoapods/dt/AttributedLib.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
