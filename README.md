@@ -102,14 +102,6 @@ pod 'AttributedLib'
 ## Contribution
 Contributions are more than welcome!
 
-There are currently three main branches and their use is described as follows: 
-
-| Branch           | Purpose                                                                               |
-| :--------------: | :-----------------------------------------------------------------------------------: |
-| `master`         | The latest stable release.                                                            |
-| `development`    | Next release development branch. *Not safe to point to directly*                      |
-| `attributed-3.0` | The next major release of Attributed, release goal is currently set for July 1, 2018. |
-
 ## License
 
 Attributed is free software, and may be redistributed under the terms specified in the [LICENSE] file.
