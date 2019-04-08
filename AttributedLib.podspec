@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AttributedLib'
-  s.version          = '2.2.1'
+  s.version          = '3.0.0'
   s.summary          = 'Modern Swift µframework for attributed strings.'
  
   s.description      = <<-DESC
@@ -18,7 +18,6 @@ to `NSAttributedString`.
   s.author           = { 'Nicholas Maccharoli' => 'nmaccharoli@gmail.com' }
   s.source           = { :git => 'https://github.com/Nirma/Attributed.git', :tag => s.version.to_s }
  
-  s.swift_version = "4.2"
   s.ios.deployment_target = '9.0'
   s.source_files = 'Attributed/*.swift'
  
