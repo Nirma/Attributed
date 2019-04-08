@@ -41,7 +41,7 @@ extension Attributed where Base == String {
 
 public extension Attributed where Base == NSMutableAttributedString {
 
-    public func add(_ attributes: Attributes, to range: NSRange) {
+    func add(_ attributes: Attributes, to range: NSRange) {
         base.addAttributes(attributes.dictionary, range: range)
     }
 
@@ -49,7 +49,7 @@ public extension Attributed where Base == NSMutableAttributedString {
 
 public extension Attributed where Base == NSAttributedString {
 
-    public func modified(with attributes: Attributes, for range: NSRange) -> NSAttributedString {
+    func modified(with attributes: Attributes, for range: NSRange) -> NSAttributedString {
         let string = base as NSAttributedString
 
         let result = NSMutableAttributedString(attributedString: string)
