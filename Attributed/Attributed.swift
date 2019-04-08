@@ -46,7 +46,7 @@ public protocol AttributedCompatible {
 }
 
 public extension AttributedCompatible {
-    public var at: Attributed<Self> {
+    var at: Attributed<Self> {
         return Attributed(self)
     }
 }
