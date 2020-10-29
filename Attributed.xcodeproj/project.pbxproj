@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53787B0254B376B004CF589 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE62891DF8F9560079C70C /* String+Attributed.swift */; };
+		A53787B1254B376B004CF589 /* NSString+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4EB1E98F532003260B7 /* NSString+Attributed.swift */; };
+		A53787B2254B376B004CF589 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEF4ED1E98F62C003260B7 /* Attributes.swift */; };
+		A53787B3254B376B004CF589 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE62871DF8F3BE0079C70C /* Operators.swift */; };
+		A53787B4254B376B004CF589 /* Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3150371EA4A57300A86368 /* Attributed.swift */; };
+		A53787B7254B376B004CF589 /* Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = AAEE62701DF8F3690079C70C /* Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA28CE69206A0D5F0025AA29 /* AttributedPublicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28CE68206A0D5F0025AA29 /* AttributedPublicTests.swift */; };
 		AA3150381EA4A57300A86368 /* Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3150371EA4A57300A86368 /* Attributed.swift */; };
 		AA4B73E11E0B798C004C6947 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */; };
@@ -30,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53787BC254B376B004CF589 /* Attributed-watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Attributed-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA28CE68206A0D5F0025AA29 /* AttributedPublicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedPublicTests.swift; sourceTree = "<group>"; };
 		AA3150371EA4A57300A86368 /* Attributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributed.swift; sourceTree = "<group>"; };
 		AA4B73E01E0B798C004C6947 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
@@ -46,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A53787B5254B376B004CF589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAEE62691DF8F3690079C70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5378806254B3DC5004CF589 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AABEF4EF1E98F696003260B7 /* Attributed */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +127,7 @@
 				AAEE626F1DF8F3690079C70C /* Attributed */,
 				AAEE627A1DF8F3690079C70C /* AttributedTests */,
 				AAEE626E1DF8F3690079C70C /* Products */,
+				A5378806254B3DC5004CF589 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +136,7 @@
 			children = (
 				AAEE626D1DF8F3690079C70C /* Attributed.framework */,
 				AAEE62761DF8F3690079C70C /* AttributedTests.xctest */,
+				A53787BC254B376B004CF589 /* Attributed-watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +165,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A53787B6254B376B004CF589 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53787B7254B376B004CF589 /* Attributed.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAEE626A1DF8F3690079C70C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +184,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A53787AE254B376B004CF589 /* Attributed-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53787B9254B376B004CF589 /* Build configuration list for PBXNativeTarget "Attributed-watchOS" */;
+			buildPhases = (
+				A53787AF254B376B004CF589 /* Sources */,
+				A53787B5254B376B004CF589 /* Frameworks */,
+				A53787B6254B376B004CF589 /* Headers */,
+				A53787B8254B376B004CF589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Attributed-watchOS";
+			productName = Attributed;
+			productReference = A53787BC254B376B004CF589 /* Attributed-watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AAEE626C1DF8F3690079C70C /* Attributed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAEE62811DF8F36A0079C70C /* Build configuration list for PBXNativeTarget "Attributed" */;
@@ -199,6 +248,9 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Attributed;
 				TargetAttributes = {
+					A53787AE254B376B004CF589 = {
+						ProvisioningStyle = Automatic;
+					};
 					AAEE626C1DF8F3690079C70C = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 1020;
@@ -226,11 +278,19 @@
 			targets = (
 				AAEE626C1DF8F3690079C70C /* Attributed */,
 				AAEE62751DF8F3690079C70C /* AttributedTests */,
+				A53787AE254B376B004CF589 /* Attributed-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A53787B8254B376B004CF589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAEE626B1DF8F3690079C70C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +308,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A53787AF254B376B004CF589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53787B0254B376B004CF589 /* String+Attributed.swift in Sources */,
+				A53787B1254B376B004CF589 /* NSString+Attributed.swift in Sources */,
+				A53787B2254B376B004CF589 /* Attributes.swift in Sources */,
+				A53787B3254B376B004CF589 /* Operators.swift in Sources */,
+				A53787B4254B376B004CF589 /* Attributed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAEE62681DF8F3690079C70C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +353,59 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A53787BA254B376B004CF589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Attributed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = attributed.Attributed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		A53787BB254B376B004CF589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Attributed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = attributed.Attributed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		AAEE627F1DF8F36A0079C70C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -405,6 +530,7 @@
 		AAEE62821DF8F36A0079C70C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -425,6 +551,7 @@
 		AAEE62831DF8F36A0079C70C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -468,6 +595,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A53787B9254B376B004CF589 /* Build configuration list for PBXNativeTarget "Attributed-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53787BA254B376B004CF589 /* Debug */,
+				A53787BB254B376B004CF589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AAEE62671DF8F3690079C70C /* Build configuration list for PBXProject "Attributed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
