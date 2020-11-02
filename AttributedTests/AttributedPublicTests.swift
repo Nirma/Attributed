@@ -21,7 +21,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#if !os(watchOS)
 import XCTest
 
 // DO NOT USE `@testable import`
@@ -39,4 +38,3 @@ class AttributedPublicTests: XCTestCase {
         XCTAssert(testResult, "Dictionary is not accessible")
     }
 }
-#endif
