@@ -19,7 +19,8 @@ to `NSAttributedString`.
   s.source           = { :git => 'https://github.com/Nirma/Attributed.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '9.0'
+  s.watchos.deployment_target = "3.0"
   s.source_files = 'Attributed/*.swift'
- 
+  
 end
 
